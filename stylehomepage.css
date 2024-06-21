@@ -1,19 +1,56 @@
-h1 {
-    font-family: "DM Serif Display";
+
+
+h1 {   
+    font-family: Reggae One;
     background-color: rgb(255, 255, 255);
 }
 p{  
-    font-family: "DM Serif Display";
+    font-family: Reggae One;
     color: rgb(23, 230, 141);
 }
 h2 {
-    font-family: "DM Serif Display";
+    font-family: Reggae One;
     color: aqua;
 }
-:any-link{
-    color: rgb(224, 103, 153);
+
+
+h8{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
 }
 
-h3{
-    color: aliceblue;
-}
+
+.center-header {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Reggae One;
+  }
+
+  .center-right {
+    color: rgb(255, 255, 255);
+    text-align: right;
+    font-family: Reggae One;
+  }
+  
+  .skill-container {
+    border: solid rgb(123, 231, 0);
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .skill-container1 > h3 {
+    color: rgba(0, 0, 0, 0.873);
+    font-style: italic;
+  }
+
+  .top-bar {
+    height: 50px;
+    background-color: #000000;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 6px 8px rgba(50, 48, 48, 0.8);
+  }
