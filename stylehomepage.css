@@ -1,7 +1,7 @@
 
 
 :any-link{
-    color: rgb(102, 224, 251);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -12,24 +12,25 @@ h1 {
     background-color: rgb(255, 255, 255);
 }
 p{  
+    font-size: 18px;
     font-family: Reggae One;
-    color: rgb(23, 230, 141);
+    color: rgb(255, 255, 255);
 }
 h2 {
     font-family: Reggae One;
-    color: aqua;
+    color: rgb(71, 243, 4);
 }
 
 
 h3{
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 254, 254);
 }
 
 
 .center-header {
-    color: rgb(255, 255, 255);
-    text-align: center;
+    color: rgb(234, 255, 152);
+    text-align: left;
     font-family: Reggae One;
   }
 
@@ -40,18 +41,14 @@ h3{
   }
   
   .skill-container {
-    border: solid rgb(123, 231, 0);
-    width: 500px;
+    border: solid rgb(0, 214, 207);
+    width: 600px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1rem;
-    margin-bottom: 10px;
+    padding: 2rem;
+    margin-bottom: 6px;
   }
   
-  .skill-container1 > h3 {
-    color: rgba(0, 0, 0, 0.873);
-    font-style: italic;
-  }
 
   .top-bar {
     height: 70px;
@@ -100,23 +97,24 @@ h3{
   
   .animated-text {
       font-size: 24px;
-      text-align: center;
+      text-align: right;
       position: unset;
       animation: slideLeftRight 4s linear infinite alternate;
+      animation: slideLeftRight 4s  infinite alternate;
   }
 
   @keyframes slideLeftRight {
       0% {
-          transform: translateX(0);
+          transform: translateX(-100);
       }
       100% {
-          transform: translateX(200px);
+          transform: translateX(100px);
       }
   }
 
 
 
-  .bounce-text {
+ .bounce-text {
     font-size: 24px;
     text-align: center;
     position: relative;
@@ -124,9 +122,11 @@ h3{
 }
 
 .bounce-text:hover {
-    animation: bounce 0.5s;
-    animation-fill-mode: forwards;
+  
+  animation: bounce 0.5s;
+  animation-fill-mode: forwards;
 }
+
 
 @keyframes bounce {
     0%, 100% {
@@ -135,4 +135,72 @@ h3{
     50% {
         transform: translateY(-10px);
     }
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 25px;
+}
+
+nav ul li a {
+  
+  
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  font-size: 1.8rem;
+}
+
+nav ul li a:hover {
+  color: #b71e1e;
+}
+
+nav ul li a:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  left: 0;
+  bottom: -5px;
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+  display: ruby-base;
+  margin: 5px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 90px rgba(60, 13, 13, 0.8);
+}
+
+.image-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.moving-image {
+  width: 220px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.moving-image:hover {
+  animation: moveUp 0.5s forwards;
+}
+
+@keyframes moveUp {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-50px); 
+  }
 }
