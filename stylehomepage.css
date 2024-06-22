@@ -22,14 +22,15 @@ h2 {
 }
 
 
-h3{
+h3{ 
+    font-size:30px ;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(255, 254, 254);
 }
 
 
 .center-header {
-    color: rgb(234, 255, 152);
+    color: rgb(178, 203, 81);
     text-align: left;
     font-family: Reggae One;
   }
@@ -59,6 +60,15 @@ h3{
     box-shadow: 0 6px 8px rgba(50, 48, 48, 0.8);
   }
 
+
+  .top-bar1 {
+    height: 140px;
+    background-color: #ead3d3;
+    top: 0;
+    width: 100%;
+    z-index: 150;
+    box-shadow: 0 6px 8px rgba(50, 48, 48, 0.8);
+  }
 
   .popup {
     display: none;
@@ -96,7 +106,8 @@ h3{
 
   
   .animated-text {
-      font-size: 24px;
+      font-size: 30px;
+      margin-left: 100px;
       text-align: right;
       position: unset;
       animation: slideLeftRight 4s linear infinite alternate;
@@ -183,12 +194,13 @@ img {
 }
 
 .image-container {
-  text-align: center;
-  margin-top: 40px;
+  text-align: left;
+  margin-top: 90px;
+  margin-left: 100px;
 }
 
 .moving-image {
-  width: 220px;
+  width: 280px;
   transition: transform 0.3s ease-in-out;
 }
 
