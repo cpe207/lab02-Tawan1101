@@ -12,7 +12,7 @@ h1 {
     background-color: rgb(255, 255, 255);
 }
 p{  
-    font-size: 18px;
+    font-size: 15px;
     font-family: Reggae One;
     color: rgb(255, 255, 255);
 }
@@ -32,6 +32,7 @@ h3{
 .center-header {
     color: rgb(178, 203, 81);
     text-align: left;
+    margin-left: 350px;
     font-family: Reggae One;
   }
 
@@ -44,11 +45,43 @@ h3{
   .skill-container {
     border: solid rgb(0, 214, 207);
     width: 600px;
-    margin-left: auto;
+    margin-left: 160;
     margin-right: auto;
-    padding: 2rem;
+    padding: 1rem;
     margin-bottom: 6px;
   }
+
+  .skill-container1 {
+    text-align: left;
+    margin-left:400px ;
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    height: 190px;
+    width: 1000px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+ 
+.skill-container1 h3 {
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.skill-container1 p {
+    color: #3c3a3a;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: Reggae One;
+}
+
   
 
   .top-bar {
@@ -62,7 +95,7 @@ h3{
 
 
   .top-bar1 {
-    height: 140px;
+    height: 100px;
     background-color: #ead3d3;
     top: 0;
     width: 100%;
@@ -215,4 +248,26 @@ img {
   100% {
       transform: translateY(-50px); 
   }
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+.moving-image {
+  width: 350px;
+  margin-right: 50px; /* ระยะห่างด้านขวาของภาพ */
+}
+
+.text-container {
+  flex: 1; /* ขยายเต็มพื้นที่ที่เหลือของคอนเทนเนอร์ */
+}
+
+.skill-container {
+  margin-top: 20px; /* ระยะห่างด้านบนของ skill-container */
+}
+
+.top-bar1 {
+  margin-top: 20px; /* ระยะห่างด้านบนของ top-bar1 */
 }
